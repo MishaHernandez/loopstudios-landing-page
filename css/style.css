@@ -435,6 +435,93 @@ nav {
   margin-top: 0;
 }
 
+.creations {
+  display: grid;
+}
+.creations__subtitle {
+  font-family: "Josefine Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  order: 1;
+}
+.creations__button {
+  margin-left: auto;
+  margin-right: auto;
+  order: 3;
+}
+.creations__gallery {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  row-gap: 1.6rem;
+  order: 2;
+}
+.creations__gallery-item:nth-child(1) {
+  background-image: url("../images/mobile/image-deep-earth.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.creations__gallery-item:nth-child(2) {
+  background-image: url("../images/mobile/image-night-arcade.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.creations__gallery-item:nth-child(3) {
+  background-image: url("../images/mobile/image-soccer-team.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.creations__gallery-item:nth-child(4) {
+  background-image: url("../images/mobile/image-grid.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.creations__gallery-item:nth-child(5) {
+  background-image: url("../images/mobile/image-from-above.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.creations__gallery-item:nth-child(6) {
+  background-image: url("../images/mobile/image-pocket-borealis.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.creations__gallery-item:nth-child(7) {
+  background-image: url("../images/mobile/image-curiosity.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.creations__gallery-item:nth-child(8) {
+  background-image: url("../images/mobile/image-fisheye.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.creations__gallery-item {
+  height: 7.75rem;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  font-family: "Josefine Sans", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button {
+  display: block;
+  border-style: none;
+  border: 1px solid;
+  padding: 12px 2.4rem;
+  background-color: inherit;
+  text-transform: uppercase;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 5px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

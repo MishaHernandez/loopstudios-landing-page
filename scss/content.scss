@@ -1,4 +1,4 @@
-// component 1
+// section 1
 .interactive {
     width: 86%;
     margin-left: auto;
@@ -31,6 +31,80 @@
             line-height: 1.7;
 
             margin-top: 0;
+        }
+    }
+}
+
+// section 2
+.creations {
+    display: grid;
+
+    &__subtitle {
+        font-family: 'Josefine Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        // grid
+        order: 1;
+    }
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+
+        order: 3;
+    }
+    &__gallery {
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        // grid
+        display: grid;
+        row-gap: 1.6rem;
+        order: 2;
+
+        &-item {
+
+            &:nth-child(1) {
+                background-image: url('../images/mobile/image-deep-earth.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(2) {
+                background-image: url('../images/mobile/image-night-arcade.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(3) {
+                background-image: url('../images/mobile/image-soccer-team.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(4) {
+                background-image: url('../images/mobile/image-grid.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(5) {
+                background-image: url('../images/mobile/image-from-above.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(6) {
+                background-image: url('../images/mobile/image-pocket-borealis.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(7) {
+                background-image: url('../images/mobile/image-curiosity.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(8) {
+                background-image: url('../images/mobile/image-fisheye.jpg');
+                background-size: cover;
+                background-position: center;
+            }
         }
     }
 }
