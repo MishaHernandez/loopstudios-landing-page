@@ -5,3 +5,18 @@
 body {
     font-size: 15px;
 }
+
+header {
+    height: 100vh;
+    
+    background-image: url('../images/mobile/image-hero.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: none;
+}
