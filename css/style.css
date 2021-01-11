@@ -368,6 +368,11 @@ nav {
   display: none;
 }
 
+footer {
+  background-color: black;
+  color: #ffffff;
+}
+
 .navbar {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -520,6 +525,24 @@ nav {
   text-transform: uppercase;
   font-family: "Alata", sans-serif;
   letter-spacing: 5px;
+}
+
+.footer-logo {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  display: grid;
+  row-gap: 1.5rem;
+  justify-items: center;
+}
+.info__link {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Alata", sans-serif;
 }
 
 .attribution {
