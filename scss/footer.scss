@@ -16,6 +16,24 @@
         font-family: 'Alata', sans-serif;
     }
 }
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+
+    // &-items {
+        
+    // }
+}
+
+.copyright {
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    opacity: .5;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
