@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    transition: top 0.3s;
 
     &__wrapper {
         width: 86%;
@@ -20,4 +21,8 @@
     // &__menu-icon {
 
     // }
+}
+
+.js-hidden {
+    top: -57px
 }

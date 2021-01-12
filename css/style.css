@@ -403,10 +403,17 @@ footer {
   margin-bottom: 0;
 }
 
+.js-shrink {
+  background-color: #000000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: top 0.3s;
 }
 .navbar__wrapper {
   width: 86%;
@@ -419,6 +426,10 @@ footer {
 .navbar__logo {
   display: block;
   width: 150px;
+}
+
+.js-hidden {
+  top: -57px;
 }
 
 .interactive {
