@@ -381,6 +381,8 @@ nav {
 footer {
   background-color: black;
   color: #ffffff;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .navbar {
@@ -421,6 +423,9 @@ footer {
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .interactive__img {
   width: 100%;
@@ -447,6 +452,7 @@ footer {
 
 .creations {
   display: grid;
+  margin-bottom: 4.1rem;
 }
 .creations__subtitle {
   font-size: 2rem;
@@ -456,6 +462,8 @@ footer {
 .creations__button {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   order: 3;
 }
 .creations__gallery {
@@ -533,12 +541,14 @@ footer {
   width: 150px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2.3rem;
 }
 
 .info {
   display: grid;
-  row-gap: 1.5rem;
+  row-gap: 1.6rem;
   justify-items: center;
+  margin-bottom: 3.3rem;
 }
 .info__link {
   text-decoration: none;
@@ -550,6 +560,7 @@ footer {
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .copyright {
