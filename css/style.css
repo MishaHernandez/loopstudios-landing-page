@@ -355,6 +355,16 @@ body {
   font-size: 15px;
 }
 
+h1, h2 {
+  font-family: "Josefine Sans", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+p, a, button {
+  font-family: "Alata", sans-serif;
+}
+
 header {
   height: 100vh;
   background-image: url("../images/mobile/image-hero.jpg");
@@ -379,19 +389,16 @@ footer {
 }
 
 .title {
-  font-family: "Josefine Sans", sans-serif;
   font-size: 2.5rem;
-  font-weight: lighter;
-  text-transform: uppercase;
   color: #ffffff;
   line-height: 1;
   width: 86%;
+  padding: 20px;
+  border: 2px solid;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 20px;
-  border: 2px solid;
 }
 
 .navbar {
@@ -405,11 +412,13 @@ footer {
   transform: translateX(-50%);
 }
 .navbar__logo {
+  display: block;
   width: 150px;
 }
 
 .interactive {
   width: 86%;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -424,16 +433,12 @@ footer {
   margin-right: auto;
 }
 .interactive__content-subtitle {
-  font-family: "Josefine Sans", sans-serif;
-  font-weight: lighter;
   font-size: 2rem;
-  text-transform: uppercase;
   text-align: center;
   line-height: 1.1;
   margin-bottom: 13.5px;
 }
 .interactive__content-paragraph {
-  font-family: "Alata", sans-serif;
   color: #8c8c8c;
   text-align: center;
   line-height: 1.7;
@@ -444,10 +449,7 @@ footer {
   display: grid;
 }
 .creations__subtitle {
-  font-family: "Josefine Sans", sans-serif;
-  font-weight: lighter;
   font-size: 2rem;
-  text-transform: uppercase;
   text-align: center;
   order: 1;
 }
@@ -523,7 +525,6 @@ footer {
   padding: 12px 2.4rem;
   background-color: inherit;
   text-transform: uppercase;
-  font-family: "Alata", sans-serif;
   letter-spacing: 5px;
 }
 
@@ -542,7 +543,6 @@ footer {
 .info__link {
   text-decoration: none;
   color: inherit;
-  font-family: "Alata", sans-serif;
 }
 
 .social {
@@ -553,7 +553,6 @@ footer {
 }
 
 .copyright {
-  font-family: "Alata", sans-serif;
   text-align: center;
   opacity: 0.5;
 }

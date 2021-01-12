@@ -1,10 +1,10 @@
-@import 'variables';
-@import 'fonts';
-@import 'normalize';
-@import 'base';
-@import 'header';
+@import 'settings/variables';
+@import 'settings/fonts';
+@import 'generic/normalize';
+@import 'generic/base';
+@import 'layout/header';
 @import 'components/navbar.scss';
-@import 'content';
+@import 'layout/content';
 @import 'components/gallery-item.scss';
 @import 'components/button.scss';
-@import 'footer';
+@import 'layout/footer';

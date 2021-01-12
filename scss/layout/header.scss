@@ -4,18 +4,16 @@
 }
 
 .title {
-    font-family: 'Josefine Sans', sans-serif;
+    // font
     font-size: 2.5rem;
-    font-weight: lighter;
-    text-transform: uppercase;
     color: #ffffff;
     line-height: 1;
 
     width: 86%;
+    padding: 20px;
+    border: 2px solid;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 20px;
-    border: 2px solid;
 }

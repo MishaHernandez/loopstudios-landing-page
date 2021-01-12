@@ -1,6 +1,7 @@
 // section 1
 .interactive {
     width: 86%;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -9,23 +10,21 @@
         display: block;
         margin-bottom: 3rem;
     }
+
     &__content {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
 
         &-subtitle {
-            font-family: 'Josefine Sans', sans-serif;
-            font-weight: lighter;
+            // font
             font-size: 2rem;
-            text-transform: uppercase;
             text-align: center;
             line-height: 1.1;
 
             margin-bottom: 13.5px;
         }
         &-paragraph {
-            font-family: 'Alata', sans-serif;
             color: $dark-gray;
             text-align: center;
             line-height: 1.7;
@@ -40,10 +39,8 @@
     display: grid;
 
     &__subtitle {
-        font-family: 'Josefine Sans', sans-serif;
-        font-weight: lighter;
+        // font
         font-size: 2rem;
-        text-transform: uppercase;
         text-align: center;
         // grid
         order: 1;

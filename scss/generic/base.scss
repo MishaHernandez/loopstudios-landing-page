@@ -6,6 +6,16 @@ body {
     font-size: 15px;
 }
 
+h1, h2 {
+    font-family: 'Josefine Sans', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+p, a, button {
+    font-family: 'Alata', sans-serif;
+}
+
 header {
     height: 100vh;
     
