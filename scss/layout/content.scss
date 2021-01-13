@@ -1,6 +1,7 @@
 // section 1
 .interactive {
     width: 86%;
+    max-width: 1114px;
     height: auto;
     padding-top: 6.25rem;
     padding-bottom: 3.25rem;
@@ -11,16 +12,38 @@
     flex-direction: column;
     justify-content: center;
 
+    position: relative;
+
+    @include desktop-up {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
     &__img {
         width: 100%;
+        max-width: 731px;
         display: block;
         margin-bottom: 3rem;
+
+        @include desktop-up {
+            margin-right: auto;
+        }
     }
 
     &__content {
         width: 90%;
+        max-width: 640px;
         margin-left: auto;
         margin-right: auto;
+        background-color: #fff;
+        
+        @include desktop-up {
+            padding: 6rem;
+
+            position: absolute;
+            right: -100px;
+            top: 280px;
+        }
 
         &-subtitle {
             // font
@@ -30,6 +53,10 @@
 
             margin-top: 0;
             margin-bottom: 13.5px;
+            @include desktop-up {
+                font-size: 3rem;
+                text-align: left;
+            }
         }
         &-paragraph {
             color: $dark-gray;
@@ -37,6 +64,10 @@
             line-height: 1.7;
 
             margin-top: 0;
+
+            @include desktop-up {
+                text-align: left;
+            }
         }
     }
 }
