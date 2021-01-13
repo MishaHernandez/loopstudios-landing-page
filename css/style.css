@@ -408,6 +408,7 @@ footer {
 
 .title-wrapper {
   width: 86%;
+  max-width: 1114px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -444,6 +445,7 @@ footer {
 }
 .navbar__wrapper {
   width: 86%;
+  max-width: 1114px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -632,6 +634,9 @@ footer {
   }
 }
 
+.creations__gallery {
+  max-width: 1114px;
+}
 .creations__gallery-item {
   height: 7.75rem;
   padding: 20px;
