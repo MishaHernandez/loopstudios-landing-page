@@ -373,6 +373,11 @@ header {
   display: flex;
   align-items: center;
 }
+@media (min-width: 1200px) {
+  header {
+    background-image: url("../images/desktop/image-hero.jpg");
+  }
+}
 
 nav {
   display: none;
@@ -393,6 +398,12 @@ footer {
 .navbar {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+@media (min-width: 1200px) {
+  .navbar {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
 }
 
 .title {

@@ -25,6 +25,10 @@ header {
 
     display: flex;
     align-items: center;
+
+    @include desktop-up {
+        background-image: url('../images/desktop/image-hero.jpg');
+    }
 }
 
 nav {
