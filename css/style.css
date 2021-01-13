@@ -406,17 +406,27 @@ footer {
   }
 }
 
-.title {
+.title-wrapper {
   width: 86%;
-  padding: 20px;
-  border: 2px solid;
   margin-left: auto;
   margin-right: auto;
+}
+
+.title {
+  max-width: 652px;
+  padding: 20px;
+  border: 2px solid;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 2.5rem;
   color: #ffffff;
   line-height: 1;
+}
+@media (min-width: 1200px) {
+  .title {
+    padding: 40px;
+    font-size: 4.5rem;
+  }
 }
 
 .js-shrink {
