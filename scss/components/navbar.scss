@@ -1,14 +1,16 @@
 .navbar {
-    position: fixed;
-    top: 0;
     width: 100%;
     transition: top 0.3s;
+    // position
+    position: fixed;
+    top: 0;
+    z-index: 10;
 
     &__wrapper {
         width: 86%;
         margin-left: auto;
         margin-right: auto;
-    
+        // flexbox
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,10 +19,15 @@
     &__logo {
         display: block;
         width: 150px;
+        @include desktop-up {
+            width: 192px;
+        }
     }
-    // &__menu-icon {
-
-    // }
+    &__menu-icon {
+        @include desktop-up {
+            display: none;
+        }
+    }
 }
 
 .js-hidden {

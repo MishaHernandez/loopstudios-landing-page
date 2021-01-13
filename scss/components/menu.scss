@@ -1,0 +1,13 @@
+.menu {
+    list-style: none;
+    padding-left: 0;
+    // flexbox
+    display: flex;
+    column-gap: 2rem;
+
+    .menu__link {
+        color: #ffffff;
+        text-decoration: none;
+        opacity: .9;
+    }
+}

@@ -29,6 +29,9 @@ header {
 
 nav {
     display: none;
+    @include desktop-up {
+        display: block;
+    }
 }
 
 footer {

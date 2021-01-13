@@ -377,6 +377,11 @@ header {
 nav {
   display: none;
 }
+@media (min-width: 1200px) {
+  nav {
+    display: block;
+  }
+}
 
 footer {
   background-color: black;
@@ -391,9 +396,6 @@ footer {
 }
 
 .title {
-  font-size: 2.5rem;
-  color: #ffffff;
-  line-height: 1;
   width: 86%;
   padding: 20px;
   border: 2px solid;
@@ -401,6 +403,9 @@ footer {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 1;
 }
 
 .js-shrink {
@@ -410,10 +415,11 @@ footer {
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
   transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 .navbar__wrapper {
   width: 86%;
@@ -427,9 +433,31 @@ footer {
   display: block;
   width: 150px;
 }
+@media (min-width: 1200px) {
+  .navbar__logo {
+    width: 192px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar__menu-icon {
+    display: none;
+  }
+}
 
 .js-hidden {
   top: -57px;
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  column-gap: 2rem;
+}
+.menu .menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
 }
 
 .interactive {
