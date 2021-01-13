@@ -378,12 +378,11 @@ header {
     background-image: url("../images/desktop/image-hero.jpg");
   }
 }
-
-nav {
+header nav {
   display: none;
 }
 @media (min-width: 1200px) {
-  nav {
+  header nav {
     display: block;
   }
 }
@@ -391,8 +390,19 @@ nav {
 footer {
   background-color: black;
   color: #ffffff;
-  padding-top: 3.5rem;
+  padding-top: 3.6rem;
   padding-bottom: 3.5rem;
+}
+@media (min-width: 1200px) {
+  footer {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  footer nav {
+    order: 2;
+  }
 }
 
 .navbar {
@@ -472,12 +482,19 @@ footer {
 }
 
 .menu {
-  list-style: none;
+  list-style-type: none;
   padding-left: 0;
   display: flex;
-  column-gap: 2rem;
+  flex-direction: column;
+  row-gap: 1.45rem;
 }
-.menu .menu__link {
+@media (min-width: 1200px) {
+  .menu {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+}
+.menu__link {
   color: #ffffff;
   text-decoration: none;
   opacity: 0.9;
@@ -740,43 +757,75 @@ footer {
   letter-spacing: 5px;
 }
 
+.footer-wrapper {
+  width: 86%;
+  max-width: 1114px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+@media (min-width: 1200px) {
+  .footer-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.8rem;
+  }
+}
 .footer-logo {
   display: block;
   width: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2.3rem;
+  margin-bottom: 1.5rem;
 }
-
-.info {
-  display: grid;
-  row-gap: 1.6rem;
-  justify-items: center;
+@media (min-width: 1200px) {
+  .footer-logo {
+    margin: 0;
+  }
+}
+.footer-menu {
   margin-bottom: 3.3rem;
+  align-items: center;
 }
-.info__link {
-  text-decoration: none;
-  color: inherit;
+@media (min-width: 1200px) {
+  .footer-menu {
+    margin: 0;
+    justify-content: start;
+    order: 3;
+  }
 }
-
-.social {
+.footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
-  margin-bottom: 1.2rem;
 }
-
-.copyright {
+@media (min-width: 1200px) {
+  .footer-social {
+    justify-content: end;
+  }
+}
+.footer-copyright {
   text-align: center;
   opacity: 0.5;
 }
-
-.attribution {
+@media (min-width: 1200px) {
+  .footer-copyright {
+    margin: 0;
+    text-align: end;
+    order: 4;
+  }
+}
+.footer-attribution {
   font-size: 11px;
   text-align: center;
 }
-.attribution__link {
+@media (min-width: 1200px) {
+  .footer-attribution {
+    grid-column: 1/-1;
+    order: 5;
+  }
+}
+.footer-attribution__link {
   color: #3e52a3;
 }
 

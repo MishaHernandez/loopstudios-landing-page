@@ -1,11 +1,18 @@
 .menu {
-    list-style: none;
+    list-style-type: none;
     padding-left: 0;
     // flexbox
     display: flex;
-    column-gap: 2rem;
+    flex-direction: column;
+    row-gap: 1.45rem;
 
-    .menu__link {
+    @include desktop-up {
+        // flexbox
+        flex-direction: row;
+        column-gap: 2rem;    
+    }
+
+    &__link {
         color: #ffffff;
         text-decoration: none;
         opacity: .9;

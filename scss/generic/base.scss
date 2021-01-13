@@ -29,18 +29,30 @@ header {
     @include desktop-up {
         background-image: url('../images/desktop/image-hero.jpg');
     }
-}
 
-nav {
-    display: none;
-    @include desktop-up {
-        display: block;
+    nav {
+        display: none;
+
+        @include desktop-up {
+            display: block;
+        }
     }
 }
 
 footer {
     background-color: $black;
     color: #ffffff;
-    padding-top: 3.5rem;
+    padding-top: 3.6rem;
     padding-bottom: 3.5rem;
+    @include desktop-up {
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+    }
+
+    nav {
+        @include desktop-up {
+            // grid item
+            order: 2;
+        }
+    }
 }
