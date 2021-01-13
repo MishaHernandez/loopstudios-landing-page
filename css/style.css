@@ -557,10 +557,20 @@ footer {
   display: grid;
   margin-bottom: 4.1rem;
 }
+@media (min-width: 1200px) {
+  .creations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .creations__subtitle {
   font-size: 2rem;
   text-align: center;
   order: 1;
+}
+@media (min-width: 1200px) {
+  .creations__subtitle {
+    justify-self: start;
+  }
 }
 .creations__button {
   margin-left: auto;
@@ -568,6 +578,12 @@ footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
   order: 3;
+}
+@media (min-width: 1200px) {
+  .creations__button {
+    order: 2;
+    margin-right: 0;
+  }
 }
 .creations__gallery {
   width: 86%;
@@ -581,6 +597,8 @@ footer {
   .creations__gallery {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1.6rem;
+    order: 3;
+    grid-column: 1/-1;
   }
 }
 @media (min-width: 1440px) {

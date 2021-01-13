@@ -77,33 +77,49 @@
     display: grid;
     
     margin-bottom: 4.1rem;
+    @include desktop-up {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     &__subtitle {
         // font
         font-size: 2rem;
         text-align: center;
-        // grid
+        // grid item
         order: 1;
+        @include desktop-up {
+            justify-self: start;
+        }
     }
     &__button {
         margin-left: auto;
         margin-right: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
-
+        // grid item
         order: 3;
+        @include desktop-up {
+            order: 2;
+            // to align to the right
+            margin-right: 0;
+        }
     }
     &__gallery {
         width: 86%;
         margin-left: auto;
         margin-right: auto;
-        // grid
+        // grid container
         display: grid;
         row-gap: 1.6rem;
+        // grid item
         order: 2;
         @include desktop-up {
+            // grid container
             grid-template-columns: repeat(4, 1fr);
             column-gap: 1.6rem;
+            order: 3;
+            // grid item
+            grid-column: 1/-1;
         }
         @include big-desktop-up {
             column-gap: 2rem;
