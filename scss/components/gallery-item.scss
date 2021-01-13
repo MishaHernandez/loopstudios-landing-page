@@ -1,12 +1,49 @@
-.creations__gallery-item {
-    height: 7.75rem;
-    padding: 20px;
-    // flexbox
-    display: flex;
-    align-items: flex-end;
-    // font
-    font-family: 'Josefine Sans', sans-serif;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #ffffff;
+.creations__gallery {
+    &-item {
+        height: 7.75rem;
+        padding: 20px;
+        // flexbox
+        display: flex;
+        align-items: flex-end;
+        // font
+        font-family: 'Josefine Sans', sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, .5) 15%, rgba(255, 255, 255, 0) 65%);
+            // position
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        @include desktop-up {
+            max-width: 256px;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            // font
+            font-size: 2rem;
+
+            &::before {
+                background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, .6) 80%);
+            }
+
+        }
+    }
+
+    &-title {
+        width: 50%;
+
+        position: absolute;
+        @include desktop-up {
+            width: 90%;
+        }
+    }
 }

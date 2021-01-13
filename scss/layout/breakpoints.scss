@@ -1,22 +1,22 @@
-@mixin for-tablet-portrait-up {
+@mixin tablet-portrait-up {
     @media (min-width: 600px) {
         @content;
     }
 }
 
-@mixin for-tablet-landscape-up {
+@mixin tablet-landscape-up {
     @media (min-width: 900px) {
         @content;
     }
 }
 
-@mixin for-desktop-up {
+@mixin desktop-up {
     @media (min-width: 1200px) {
         @content;
     }
 }
 
-@mixin for-big-desktop-up {
+@mixin big-desktop-up {
     @media (min-width: 1440px) {
         @content;
     }
