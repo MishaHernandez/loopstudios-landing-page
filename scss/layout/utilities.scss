@@ -1,0 +1,30 @@
+// hidden menu on scroll
+.js-shrink {
+    background-color: #000000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.js-hidden {
+    top: -57px
+}
+
+.js-navbar {
+    width: 100%;
+    transition: top 0.3s;
+    // position
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+// menu open styles when clic on menu-icon
+.js-navbar__nav {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    // position
+    position: absolute;
+    top: 105px;
+    left: 0;
+}

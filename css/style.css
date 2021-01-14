@@ -370,8 +370,7 @@ header {
   background-image: url("../images/mobile/image-hero.jpg");
   background-size: cover;
   background-position: center top;
-  display: flex;
-  align-items: center;
+  display: grid;
 }
 @media (min-width: 1200px) {
   header {
@@ -440,19 +439,6 @@ footer {
   }
 }
 
-.js-shrink {
-  background-color: #000000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.navbar {
-  width: 100%;
-  transition: top 0.3s;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
 .navbar__wrapper {
   width: 86%;
   max-width: 1114px;
@@ -475,10 +461,6 @@ footer {
   .navbar__menu-icon {
     display: none;
   }
-}
-
-.js-hidden {
-  top: -57px;
 }
 
 .menu {
@@ -827,6 +809,33 @@ footer {
 }
 .footer-attribution__link {
   color: #3e52a3;
+}
+
+.js-shrink {
+  background-color: #000000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.js-hidden {
+  top: -57px;
+}
+
+.js-navbar {
+  width: 100%;
+  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.js-navbar__nav {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  position: absolute;
+  top: 105px;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
