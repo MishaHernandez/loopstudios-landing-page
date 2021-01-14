@@ -32,6 +32,13 @@ header {
 
     nav {
         display: none;
+        // width: 100%;
+        // height: 100vh;
+        // background-color: #000000;
+        // // position
+        // position: absolute;
+        // top: 105px;
+        // left: 0;
 
         @include desktop-up {
             display: block;
