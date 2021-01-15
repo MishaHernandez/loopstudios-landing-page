@@ -1,6 +1,7 @@
 .navbar {
     &__wrapper {
         width: 86%;
+        height: 25px; /* ensure height when its items (logo and menu-icon) float */
         max-width: 1114px;
         margin-left: auto;
         margin-right: auto;
@@ -13,11 +14,14 @@
     &__logo {
         display: block;
         width: 150px;
+
         @include desktop-up {
             width: 192px;
         }
     }
     &__menu-icon {
+        cursor: pointer;
+
         @include desktop-up {
             display: none;
         }

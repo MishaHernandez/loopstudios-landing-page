@@ -1,4 +1,4 @@
-.menu {
+.header-menu, .footer-menu {
     list-style-type: none;
     padding-left: 0;
     // flexbox
@@ -9,7 +9,7 @@
     @include desktop-up {
         // flexbox
         flex-direction: row;
-        column-gap: 2rem;    
+        column-gap: 2rem;
     }
 
     &__link {

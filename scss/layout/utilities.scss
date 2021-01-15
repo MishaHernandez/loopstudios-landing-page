@@ -18,13 +18,32 @@
     z-index: 10;
 }
 
-// menu open styles when clic on menu-icon
+// menu open in mobile view
 .js-navbar__nav {
-    width: 100%;
-    height: 100vh;
-    background-color: #000000;
-    // position
-    position: absolute;
-    top: 105px;
-    left: 0;
+    @include mobile-down {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        // position
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+}
+
+.js-fixed {
+    @include mobile-down {
+        &-logo, &-menu {
+            position: fixed;
+            z-index: 20;
+        }
+        &-logo {
+            left: 27px;
+        }
+        &-menu {
+            right: 27px;
+        }
+    }
 }

@@ -24,7 +24,7 @@ header {
     background-position: center top;
 
     display: grid;
-    // align-items: center;
+    align-items: start;
 
     @include desktop-up {
         background-image: url('../images/desktop/image-hero.jpg');

@@ -7,20 +7,24 @@
     }
 }
 
-// .header-menu {
-//     height: 80%;
-//     margin: 0 0 0 20px;
-//     // flex container
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-
-//     &__link {
-//         font-family: 'Josefine Sans', sans-serif;
-//         text-transform: uppercase;
-//         font-size: 1.5rem;
-//     }
-// }
+.header-menu {
+    @include mobile-down {
+        width: 86%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        // flex container
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        &__link {
+            font-family: 'Josefine Sans', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+    }
+}
 
 .title-wrapper {
     width: 86%;
