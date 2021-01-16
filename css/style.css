@@ -914,24 +914,6 @@ footer {
   color: #3e52a3;
 }
 
-.js-shrink {
-  background-color: #000000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.js-hidden {
-  top: -57px;
-}
-
-.js-navbar {
-  width: 100%;
-  transition: top 0.3s;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
 @media (max-width: 1199px) {
   .js-navbar__nav {
     display: block;
