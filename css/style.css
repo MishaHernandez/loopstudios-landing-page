@@ -866,6 +866,7 @@ footer {
 }
 @media (min-width: 1200px) {
   .footer-social {
+    margin-left: auto;
     justify-content: end;
   }
 }

@@ -39,12 +39,14 @@
     }
     
     &-social {
+        // flex container
         display: flex;
         justify-content: center;
         align-items: center;
         -moz-column-gap: 1rem;
-             column-gap: 1rem;
+        column-gap: 1rem;
         @include desktop-up {
+            margin-left: auto;
             justify-content: end;
         }
 
