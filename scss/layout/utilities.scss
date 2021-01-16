@@ -55,17 +55,21 @@
 }
 
 .js-move-up-1 {
-    animation: move-up-1 1s;
+    -webkit-animation: move-up-1 1s;
+            animation: move-up-1 1s;
 }
 
 .js-move-up-2 {
-    animation: move-up-2 1.5s;
+    -webkit-animation: move-up-2 1.5s;
+            animation: move-up-2 1.5s;
 }
 
 .js-move-left {
-    animation: move-left 1.5s;
+    -webkit-animation: move-left 1.5s;
+            animation: move-left 1.5s;
 }
 
 .js-move-right {
-    animation: move-right .8s ease-in-out;
+    -webkit-animation: move-right .8s ease-in-out;
+            animation: move-right .8s ease-in-out;
 }

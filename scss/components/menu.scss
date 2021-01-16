@@ -9,7 +9,8 @@
     @include desktop-up {
         // flexbox
         flex-direction: row;
-        column-gap: 2rem;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
     }
 
     &__link {

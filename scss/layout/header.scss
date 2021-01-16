@@ -1,7 +1,8 @@
 .navbar {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    animation: move-down 1s;
+    -webkit-animation: move-down 1s;
+            animation: move-down 1s;
     @include desktop-up {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;

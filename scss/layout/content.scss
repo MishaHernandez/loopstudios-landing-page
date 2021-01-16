@@ -122,13 +122,15 @@
         @include desktop-up {
             // grid container
             grid-template-columns: repeat(4, 1fr);
-            column-gap: 1.6rem;
+            -moz-column-gap: 1.6rem;
+                 column-gap: 1.6rem;
             order: 3;
             // grid item
             grid-column: 1/-1;
         }
         @include big-desktop-up {
-            column-gap: 2rem;
+            -moz-column-gap: 2rem;
+                 column-gap: 2rem;
         }
 
         &-item {
