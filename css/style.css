@@ -789,8 +789,18 @@ footer {
   border: 1px solid;
   padding: 12px 2.4rem;
   background-color: inherit;
+  transition: color 0.5s, background-color 0.5s;
+  color: inherit;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+@media (min-width: 1200px) {
+  .button:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+    transition: color 0.5s, background-color 0.5s;
+  }
 }
 
 .footer-wrapper {

@@ -4,7 +4,17 @@
     border: 1px solid;
     padding: 12px 2.4rem;
     background-color: inherit;
+    transition: color .5s, background-color .5s;
     // font
+    color: inherit;
     text-transform: uppercase;
     letter-spacing: 5px;
+    @include desktop-up {
+        &:hover {
+            cursor: pointer;
+            color: #ffffff;
+            background-color: #000000;
+            transition: color .5s, background-color .5s;
+        }
+    }
 }
