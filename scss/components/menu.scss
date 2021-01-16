@@ -16,5 +16,26 @@
         color: #ffffff;
         text-decoration: none;
         opacity: .9;
+        // position
+        position: relative;
+        @include desktop-up {
+            &::after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: #fff;
+                transition: width .3s, left .3s;
+                // position
+                position: absolute;
+                left: 50%;
+                bottom: -8px;
+            }
+            &:hover::after {
+                width: 100%;
+                // position
+                left: 0;
+            }
+        }
     }
 }
