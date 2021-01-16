@@ -24,7 +24,6 @@ function showScroll() {
                 animated[i].classList.add('js-move-left');
             }
         }
-
     }
 }
 

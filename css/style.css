@@ -408,6 +408,7 @@ footer {
 .navbar {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  animation: move-down 1s;
 }
 @media (min-width: 1200px) {
   .navbar {
@@ -980,6 +981,14 @@ footer {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes move-down {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
