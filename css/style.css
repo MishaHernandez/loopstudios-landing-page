@@ -733,6 +733,7 @@ footer {
 .creations__gallery-item {
   height: 7.75rem;
   padding: 20px;
+  opacity: 0;
   display: flex;
   align-items: flex-end;
   font-size: 1.5rem;
@@ -754,10 +755,22 @@ footer {
     height: 450px;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
+    transform: scale(1);
     font-size: 2rem;
   }
   .creations__gallery-item::before {
     background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.6) 80%);
+    transition: background-image 0.5s;
+    /* no work */
+  }
+  .creations__gallery-item:hover {
+    color: #000000;
+    transform: scale(0.98);
+    transition: transform 0.5s;
+  }
+  .creations__gallery-item:hover::before {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8) 100%, rgba(0, 0, 0, 0.6) 0%);
   }
 }
 .creations__gallery-title {
@@ -913,6 +926,24 @@ footer {
   }
   .js-fixed-menu {
     right: 27px;
+  }
+}
+
+.js-remove-opacity {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.js-move-up {
+  animation: move-up 1s;
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

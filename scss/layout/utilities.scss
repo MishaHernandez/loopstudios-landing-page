@@ -47,3 +47,13 @@
         }
     }
 }
+
+// animation
+.js-remove-opacity {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.js-move-up {
+    animation: move-up 1s;
+}

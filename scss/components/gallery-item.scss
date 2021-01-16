@@ -2,6 +2,7 @@
     &-item {
         height: 7.75rem;
         padding: 20px;
+        opacity: 0;
         // flexbox
         display: flex;
         align-items: flex-end;
@@ -26,13 +27,25 @@
             height: 450px;
             background-size: cover;
             background-position: center;
+            cursor: pointer;
+            transform: scale(1);
             // font
             font-size: 2rem;
 
             &::before {
                 background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, .6) 80%);
+                transition: background-image .5s; /* no work */
             }
 
+            &:hover {
+                color: #000000;
+                transform: scale(0.98);
+                transition: transform .5s;
+
+                &::before {
+                    background-image: linear-gradient(rgba(255, 255, 255, .8) 100%, rgba(0, 0, 0, .6) 0%);
+                }
+            }
         }
     }
 
