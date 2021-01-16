@@ -39,9 +39,10 @@
     max-width: 652px;
     padding: 20px;
     border: 2px solid;
-    
     margin-top: 0;
     margin-bottom: 0;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     // font
     font-size: 2.5rem;
     color: #ffffff;
