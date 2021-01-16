@@ -961,6 +961,10 @@ footer {
   animation: move-left 1.5s;
 }
 
+.js-move-right {
+  animation: move-right 0.8s ease-in-out;
+}
+
 @keyframes move-up-1 {
   0% {
     transform: translateY(50px);
@@ -980,6 +984,14 @@ footer {
 @keyframes move-left {
   0% {
     transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes move-right {
+  0% {
+    transform: translateX(-200px);
   }
   100% {
     transform: translateX(0);
