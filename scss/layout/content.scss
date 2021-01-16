@@ -7,10 +7,11 @@
     padding-bottom: 3.25rem;
     margin-left: auto;
     margin-right: auto;
-
+    // flex container
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     position: relative;
 
@@ -26,6 +27,10 @@
         margin-bottom: 3rem;
         opacity: 0;
 
+        @include tablet-portrait-up {
+            width: 80%;
+        }
+
         @include desktop-up {
             margin-right: auto;
         }
@@ -34,39 +39,36 @@
     &__content {
         width: 90%;
         max-width: 640px;
-        margin-left: auto;
-        margin-right: auto;
         background-color: #fff;
         opacity: 0;
         
         @include desktop-up {
             padding: 6rem;
-
+            // position
             position: absolute;
             right: -100px;
             top: 280px;
         }
 
         &-subtitle {
+            margin-top: 0;
+            margin-bottom: 13.5px;
             // font
             font-size: 2rem;
             text-align: center;
             line-height: 1.1;
-
-            margin-top: 0;
-            margin-bottom: 13.5px;
             @include desktop-up {
                 font-size: 3rem;
                 text-align: left;
             }
         }
+
         &-paragraph {
+            margin-top: 0;
+            // font
             color: $dark-gray;
             text-align: center;
             line-height: 1.7;
-
-            margin-top: 0;
-
             @include desktop-up {
                 text-align: left;
             }
@@ -83,7 +85,7 @@
         max-width: 1114px;
         margin-left: auto;
         margin-right: auto;
-
+        // grid container
         display: grid;
         @include desktop-up {
             grid-template-columns: repeat(2, 1fr);
@@ -119,11 +121,14 @@
         row-gap: 1.6rem;
         // grid item
         order: 2;
+        @include tablet-landscape-up {
+            grid-template-columns: repeat(2, 1fr);
+            -moz-column-gap: 1.6rem;
+            column-gap: 1.6rem;
+        }
         @include desktop-up {
             // grid container
             grid-template-columns: repeat(4, 1fr);
-            -moz-column-gap: 1.6rem;
-                 column-gap: 1.6rem;
             order: 3;
             // grid item
             grid-column: 1/-1;
