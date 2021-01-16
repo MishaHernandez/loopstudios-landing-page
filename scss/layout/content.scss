@@ -24,6 +24,7 @@
         max-width: 731px;
         display: block;
         margin-bottom: 3rem;
+        opacity: 0;
 
         @include desktop-up {
             margin-right: auto;
@@ -36,6 +37,7 @@
         margin-left: auto;
         margin-right: auto;
         background-color: #fff;
+        opacity: 0;
         
         @include desktop-up {
             padding: 6rem;

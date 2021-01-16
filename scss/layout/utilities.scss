@@ -54,6 +54,14 @@
     transition: opacity 1s;
 }
 
-.js-move-up {
-    animation: move-up 1s;
+.js-move-up-1 {
+    animation: move-up-1 1s;
+}
+
+.js-move-up-2 {
+    animation: move-up-2 1.5s;
+}
+
+.js-move-left {
+    animation: move-left 1.5s;
 }
